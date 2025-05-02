@@ -1,0 +1,83 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: linear-gradient(to right, #f0f4ff, #eaf2f8);
+  color: #333;
+  transition: background 0.4s ease;
+}
+
+header {
+  background-color: #1d3557;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: #cfdce5;
+}
+
+footer {
+  background-color: #1d3557;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.95rem;
+  margin-top: 2rem;
+}
+
+#container {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  background-color: #ffffff;
+  width: 300px;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, background 0.4s ease;
+  cursor: pointer;
+  opacity: 0;
+  animation: fadeIn 0.6s ease forwards;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  background: #f0f8ff;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #1d3557;
+}
+
+.card p {
+  margin-bottom: 0.6rem;
+  line-height: 1.4;
+}
+
+.card p strong {
+  color: #457b9d;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
